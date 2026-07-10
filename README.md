@@ -8,6 +8,10 @@
 [Buy a license](https://klimakov.me/projects/kuroko/buy) ·
 [Product page](https://klimakov.me/projects/kuroko)
 
+<br>
+
+<img src="media/overview.png" alt="Kuroko companion app — permissions, connection, and license status at a glance" width="760">
+
 </div>
 
 ---
