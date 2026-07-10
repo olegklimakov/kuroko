@@ -20,7 +20,7 @@ First public release.
   log, connection instructions, and license management.
 - **App policy**: default denylist of sensitive apps, disarmable write tools,
   and an optional allowlist mode.
-- **Licensing**: 14-day trial, offline Ed25519 license verification, and online
-  device activation (up to 3 Macs per Individual license).
+- **Licensing**: 14-day trial and online license activation (up to 3 Macs per
+  Individual license), with device deactivation to move a seat.
 - Signed (Developer ID) & notarized direct-download DMG.
 - In-app update check.

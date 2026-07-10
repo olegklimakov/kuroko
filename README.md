@@ -101,8 +101,8 @@ workflow) and `policy://current` (the live effective policy).
 - **Secure fields**: typing into password fields (`AXSecureTextField`) is refused.
 - **Action log**: every tool call is recorded locally
   (`~/Library/Application Support/kuroko/actions.jsonl`) and shown in the app.
-- **Offline licensing**: license keys are verified locally (Ed25519) — no
-  phone-home for the entitlement itself.
+- **Licensing**: a 14-day trial is built in; a license activates online on up to
+  3 Macs, and you can deactivate a device to move a seat.
 
 ⚠️ **Prompt-injection caveat**: an agent driving your apps acts on whatever
 instructions it receives, including text it reads on screen. Keep the policy
