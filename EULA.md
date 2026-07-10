@@ -1,9 +1,9 @@
 # End-User License Agreement (EULA)
 
-_Last updated: [DATE]_
+_Last updated: 2026-07-10_
 
 This End-User License Agreement ("Agreement") is a legal agreement between you
-("Licensee") and **[LICENSOR LEGAL NAME]** ("Licensor") for the Kuroko software
+("Licensee") and **Oleg Klimakov** ("Licensor") for the Kuroko software
 and any associated documentation (the "Software"). By downloading, installing, or
 using the Software, you agree to be bound by this Agreement. If you do not agree,
 do not install or use the Software.
@@ -81,10 +81,10 @@ Software. Sections 3, 7, 8, and 10 survive termination.
 
 ## 10. Governing law
 
-This Agreement is governed by the laws of **[JURISDICTION]**, without regard to
-its conflict-of-laws rules. The courts located in **[JURISDICTION]** have
+This Agreement is governed by the laws of **Finland**, without regard to
+its conflict-of-laws rules. The courts located in **Finland** have
 exclusive jurisdiction over any dispute arising out of this Agreement.
 
 ## 11. Contact
 
-Questions about this Agreement: **[CONTACT EMAIL]**.
+Questions about this Agreement: **kuroko@klimakov.me**.
