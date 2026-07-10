@@ -1,0 +1,61 @@
+<svg width="1280" height="400" viewBox="0 0 1280 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12151f"/>
+      <stop offset="1" stop-color="#1b1f2c"/>
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" fill-opacity="0.035"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.72" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#d97e57" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#d97e57" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="400" fill="url(#bg)"/>
+  <rect width="1280" height="400" fill="url(#dots)"/>
+  <rect width="1280" height="400" fill="url(#glow)"/>
+
+  <!-- decorative accessibility tree: nodes = UI elements, one driven by a cursor -->
+  <!-- connectors -->
+  <g fill="none" stroke="#333a4d" stroke-width="1.5">
+    <path d="M 900 200 C 960 200, 960 118, 1010 118"/>
+    <path d="M 900 200 C 960 200, 960 282, 1010 282"/>
+    <path d="M 1120 118 C 1150 118, 1150 92,  1176 92"/>
+    <path d="M 1120 118 C 1150 118, 1150 150, 1176 150"/>
+    <path d="M 1120 282 C 1150 282, 1150 250, 1176 250"/>
+    <path d="M 1120 282 C 1150 282, 1150 322, 1176 322"/>
+  </g>
+
+  <!-- faint nodes -->
+  <g fill="#1c2333" stroke="#333c52" stroke-width="1.5">
+    <rect x="828"  y="184" width="72" height="30" rx="8"/>
+    <rect x="1010" y="102" width="82" height="30" rx="8"/>
+    <rect x="1010" y="266" width="82" height="30" rx="8"/>
+    <rect x="1176" y="78"  width="70" height="26" rx="7"/>
+    <rect x="1176" y="236" width="70" height="26" rx="7"/>
+    <rect x="1176" y="308" width="70" height="26" rx="7"/>
+  </g>
+
+  <!-- highlighted (driven) node -->
+  <rect x="1176" y="136" width="72" height="30" rx="8"
+        fill="#d97e57" fill-opacity="0.16" stroke="#d97e57" stroke-width="1.75"/>
+
+  <!-- cursor pointing at the driven node -->
+  <g transform="translate(1232 168)" fill="#d97e57" stroke="#12151f" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M 0 0 L 3 20 L 8.5 13.5 L 16 12.5 Z"/>
+  </g>
+
+  <!-- wordmark + tagline -->
+  <text x="80" y="196"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="76" font-weight="700" letter-spacing="1" fill="#f2f3f7">Kuroko</text>
+  <rect x="84" y="220" width="72" height="4" rx="2" fill="#d97e57"/>
+  <text x="82" y="262"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="23" fill="#c2c7d6">Let AI agents see and drive native macOS apps —</text>
+  <text x="82" y="294"
+        font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="23" fill="#9aa1b5">semantically, in the background. No focus steal.</text>
+</svg>

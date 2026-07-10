@@ -1,8 +1,6 @@
 <div align="center">
 
-# Kuroko
-
-**Let AI agents see and drive native macOS apps — semantically, in the background.**
+<img src="media/banner.png" alt="Kuroko — let AI agents see and drive native macOS apps in the background" width="100%">
 
 [Download](https://github.com/olegklimakov/kuroko/releases/latest) ·
 [Buy a license](https://klimakov.me/projects/kuroko/buy) ·
