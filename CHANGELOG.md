@@ -3,7 +3,7 @@
 All notable changes to Kuroko are documented here. Versions follow the
 `MAJOR.MINOR.PATCH` scheme; a license is perpetual for its major version.
 
-## 1.0.0 — Unreleased
+## 1.0.0 — 2026-07-11
 
 First public release.
 
