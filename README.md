@@ -60,7 +60,16 @@ your terminal / host. Have the agent call `check_permissions` to confirm the
 The bundled server binary lives at
 `/Applications/Kuroko.app/Contents/Helpers/kuroko`.
 
-**Claude Code:**
+**Claude Code — plugin (recommended).** One install gets you both the MCP
+server config and a `kuroko` skill that teaches the agent the
+see → find → act → verify workflow:
+
+```
+/plugin marketplace add olegklimakov/kuroko
+/plugin install kuroko@kuroko
+```
+
+**Claude Code — MCP server only:**
 
 ```bash
 claude mcp add kuroko -- "/Applications/Kuroko.app/Contents/Helpers/kuroko" mcp

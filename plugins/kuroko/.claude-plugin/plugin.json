@@ -1,0 +1,19 @@
+{
+  "name": "kuroko",
+  "description": "Drive and verify native macOS apps through the Kuroko MCP server — semantic, background, no focus steal. Bundles the kuroko skill and the MCP server config (requires Kuroko.app installed in /Applications).",
+  "version": "1.0.1",
+  "author": {
+    "name": "Oleg Klimakov",
+    "email": "kuroko@klimakov.me"
+  },
+  "homepage": "https://klimakov.me/projects/kuroko/",
+  "repository": "https://github.com/olegklimakov/kuroko",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "keywords": ["macos", "accessibility", "mcp", "ui-testing", "automation"],
+  "mcpServers": {
+    "kuroko": {
+      "command": "/Applications/Kuroko.app/Contents/Helpers/kuroko",
+      "args": ["mcp"]
+    }
+  }
+}

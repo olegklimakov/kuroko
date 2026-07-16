@@ -1,0 +1,15 @@
+{
+  "name": "kuroko",
+  "description": "Official Kuroko plugin marketplace — give AI agents eyes and hands for native macOS apps.",
+  "owner": {
+    "name": "Oleg Klimakov",
+    "email": "kuroko@klimakov.me"
+  },
+  "plugins": [
+    {
+      "name": "kuroko",
+      "source": "./plugins/kuroko",
+      "description": "Drive and verify native macOS apps through the Kuroko MCP server — semantic, background, no focus steal."
+    }
+  ]
+}
