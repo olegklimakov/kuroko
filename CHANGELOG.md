@@ -3,6 +3,16 @@
 All notable changes to Kuroko are documented here. Versions follow the
 `MAJOR.MINOR.PATCH` scheme; a license is perpetual for its major version.
 
+## 1.0.1 — 2026-07-16
+
+### Fixed
+- License activation now targets the live store product. 1.0.0 shipped wired
+  to a pre-release (test-mode) product, so purchased license keys were
+  rejected with "This license is for a different product" — 1.0.1 accepts
+  them. If you bought a key and hit that message, update and activate again.
+- The MCP server now reports the app version in its handshake (was a
+  placeholder `0.1.0`).
+
 ## 1.0.0 — 2026-07-11
 
 First public release.
