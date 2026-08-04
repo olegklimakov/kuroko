@@ -3,6 +3,20 @@
 All notable changes to Kuroko are documented here. Versions follow the
 `MAJOR.MINOR.PATCH` scheme; a license is perpetual for its major version.
 
+## 1.0.2 — 2026-08-04
+
+### Fixed
+- Two tool calls arriving at once could garble each other's replies, leaving
+  the agent waiting for an answer that never came — a session could appear to
+  hang for many minutes. Replies now go out one at a time.
+- A screenshot could take the whole server down with it when macOS's screen
+  capture service got stuck. Captures now run in a separate short-lived
+  process with a deadline, so a stuck one fails with a clear message instead
+  of hanging the session.
+- Overlapping screenshots no longer race the capture service into "Failed to
+  start stream due to audio/video capture failure" — they are queued and run
+  back to back.
+
 ## 1.0.1 — 2026-07-16
 
 ### Fixed
