@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+    <channel>
+        <title>Kuroko</title>
+        <link>https://raw.githubusercontent.com/olegklimakov/kuroko/main/appcast.xml</link>
+        <description>Updates for Kuroko.</description>
+        <language>en</language>
+        <item>
+            <title>1.0.3</title>
+            <pubDate>Wed, 19 Aug 2026 17:26:35 +0000</pubDate>
+            <sparkle:version>1.0.3</sparkle:version>
+            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[Kuroko now updates itself, sets up agent hosts from the Connect tab with one button, and installs its skill alongside the MCP entry.]]></description>
+            <enclosure url="https://github.com/olegklimakov/kuroko/releases/download/v1.0.3/Kuroko-1.0.3.dmg" type="application/octet-stream" sparkle:edSignature="/UUIO8gFOgtqOc3V/PWKqFLE3z6TtnUhUpODbb6FVh+37ZrsgfZ7BxLN1+riX6KVD5QVw3JEAgU++8KnfqQ/Bw==" length="4314941" />
+        </item>
+    </channel>
+</rss>

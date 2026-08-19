@@ -10,9 +10,13 @@ It lives at:
 ~/Library/Application Support/kuroko/policy.json
 ```
 
-If the file is missing or malformed, safe defaults apply (denylist mode, the
-built-in sensitive apps blocked, write tools armed). The policy is read fresh on
-every tool call, so edits take effect immediately — no restart.
+If **no file** exists, safe defaults apply (denylist mode, the built-in sensitive
+apps blocked, write tools armed). If the file **exists but can't be read or
+parsed** (corrupt JSON, a permissions or I/O error), the policy fails **closed** —
+an empty allowlist with write tools disarmed, blocking everything — so a broken
+policy can never silently downgrade a strict allowlist into the permissive
+default. Fix the file to restore access. The policy is read fresh on every tool
+call, so edits take effect immediately — no restart.
 
 ## Fields
 

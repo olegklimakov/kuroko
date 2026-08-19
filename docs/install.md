@@ -35,10 +35,32 @@ dashboard reflects the GUI's own process. Ask the agent to call
 
 ## 3. Connect it to your agent
 
+Open Kuroko's **Connect** tab. It lists every agent host it finds on this Mac —
+Claude Code, Claude Desktop, Codex & ChatGPT Desktop, Cursor, Windsurf, VS Code —
+each with its live status and one button that adds Kuroko's MCP entry for you (and
+removes it again later). Hosts that read skills — Claude Code and Codex — also get
+the `kuroko` skill installed alongside the entry, so the agent knows how to use
+the tools without hand-holding.
+
+Kuroko edits these config files rather than replacing them: where a host ships its
+own CLI the change goes through it, and everything else is written atomically,
+keeping the file's permissions and leaving a `.kuroko-backup` of the original the
+first time it is touched.
+
+### By hand
+
 The bundled server binary is at
 `/Applications/Kuroko.app/Contents/Helpers/kuroko`.
 
-**Claude Code:**
+**Claude Code — plugin.** One install gets you the MCP server config *and* the
+skill:
+
+```
+/plugin marketplace add olegklimakov/kuroko
+/plugin install kuroko@kuroko
+```
+
+**Claude Code — MCP server only:**
 
 ```bash
 claude mcp add kuroko -- "/Applications/Kuroko.app/Contents/Helpers/kuroko" mcp
@@ -58,7 +80,10 @@ claude mcp add kuroko -- "/Applications/Kuroko.app/Contents/Helpers/kuroko" mcp
 ```
 
 Any MCP-capable host works — point it at the binary with the `mcp` subcommand. The
-app's **Connect** tab shows the exact command and your resolved path.
+**Connect** tab's manual section shows the same JSON with your resolved path.
+
+The server also exposes the skill's guidance as a `guide://usage` MCP resource,
+which any host can pull on demand.
 
 ## 4. Set a policy (recommended)
 
@@ -72,24 +97,12 @@ under test, create `~/Library/Application Support/kuroko/policy.json`:
 
 Full reference: [policy.md](policy.md).
 
-## 5. (Optional) Install the Claude Code skill
-
-If a `skills/kuroko/` skill ships with a release, install it into a Claude Code
-skills directory so the agent uses the tools well without hand-holding:
-
-```bash
-cp -R skills/kuroko ~/.claude/skills/kuroko
-```
-
-The server also exposes the same guidance as a `guide://usage` MCP resource that
-any host can pull on demand.
-
-## 6. Try it
+## 5. Try it
 
 Ask your agent something concrete against your app, then watch it appear in the
 app's **Activity Log** (or `~/Library/Application Support/kuroko/actions.jsonl`).
 
-## 7. Buy a license
+## 6. Buy a license
 
 The trial lasts 14 days. To keep using Kuroko, buy a license at
 [klimakov.me/projects/kuroko/buy](https://klimakov.me/projects/kuroko/buy) and

@@ -41,6 +41,8 @@ All of it runs while you keep working in another app.
 
 Kuroko is a signed & notarized **direct download** (the App Store sandbox forbids
 driving other apps, so it isn't distributed there). Requires **macOS 14 or later**.
+It keeps itself up to date: with your go-ahead it checks for new versions and
+installs verified updates in place.
 
 ## Grant permissions — to the right process
 
@@ -57,7 +59,13 @@ your terminal / host. Have the agent call `check_permissions` to confirm the
 
 ## Connect it to your agent
 
-The bundled server binary lives at
+The app's **Connect** tab lists every agent host on your Mac — Claude Code, Claude
+Desktop, Codex & ChatGPT Desktop, Cursor, Windsurf, VS Code — each with its live
+status and one button that adds or removes Kuroko's MCP entry. Hosts that read
+skills (Claude Code, Codex) get the `kuroko` skill installed with it, so the agent
+knows the see → find → act → verify workflow from the start.
+
+To wire it up by hand, the bundled server binary lives at
 `/Applications/Kuroko.app/Contents/Helpers/kuroko`.
 
 **Claude Code — plugin (recommended).** One install gets you both the MCP
@@ -88,8 +96,8 @@ claude mcp add kuroko -- "/Applications/Kuroko.app/Contents/Helpers/kuroko" mcp
 }
 ```
 
-Any MCP-capable host works. The app's **Connect** tab shows the exact command and
-your resolved binary path.
+Any MCP-capable host works. The **Connect** tab's manual section shows the same
+JSON with your resolved binary path.
 
 ## What the agent gets
 
